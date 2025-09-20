@@ -14,21 +14,40 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!--Los robots no siguen ningun HIPERVINCULO-->
+    <meta name="robots" content="nofollow">
+
+    <!--transiciones de internet explorer -->
+    <meta http-equiv="Page-Enter" content="blendtrans(duration=5)">
+    <meta http-equiv="Page-Exit" content="blendtrans(duration=1.5)">
+
+    <!--LOGO -->
+    <link rel="shortcut icon" href="imagenes/Logo.ico" type="image/x-icon">
+
 </head>
 
 
 <body>
-    
-     <!--Menú  principal-->
-    <div class="contenedor-navegador">
-        <nav>
-            <div class="navegador">
-                <a href="#">
-                    <img src="imagenes/iconoo.jpg" alt="Inicio" class="icono-principal">
-                </a>
+
+    <!--Menú  principal-->
+<div class="contenedor-navegador">
+    <nav>
+        <div class="navegador">
+            <a href="#">
+                <img src="imagenes/iconoo.jpg" alt="Inicio" class="icono-principal">
+            </a>
+
+            <!-- Nuevos enlaces -->
+            <div class="nav-links">
+                <a href="#mejores" class="nav-item">Trajes</a>
+                <a href="#patrocinadores" class="nav-item">Patrocinadores</a>
+                <a href="#trabajadores" class="nav-item">Trabajadores</a>
             </div>
-        </nav> 
-    </div>
+        </div>
+    </nav>
+</div>
+
     
     
     
@@ -53,7 +72,7 @@
      Col-md-4 En pantallas medianas cada elemento ocupa 4 columnas
      Col-lg-3 En pantallas grandes cada elemento ocupa 3 columnas
  -->
-    <div class="bienvenida">Nuestros trajes más famosos</div>
+    <div id="mejores" class="bienvenida">Nuestros trajes más famosos</div>
     <!-- CONTENEDOR PARA LAS CARTAS -->
     <div class="container">
         <div class="row">
@@ -65,7 +84,16 @@
                         <h5 class="tarjeta-title">Esmoquin De Terciopelo</h5>
                         <p class="tarjeta-text">Con un estilo clásico y una textura lujosa, hecho para cualquier evento
                         </p>
-                        
+                        <form class="formulario-alquiler">
+                            <label>
+                                <input type="radio" name="duracion" value="2sem"> 2 semanas
+                            </label>
+                            <label>
+                                <input type="radio" name="duracion" value="1mes"> 1 mes
+                            </label><br><br>
+                               <a href="alquiler.html" class="boton-alquilar">Alquilar</a>
+
+                        </form>
                     </div>
                 </div>
             </div>
@@ -77,7 +105,15 @@
                     <div class="tarjeta-body">
                         <h5 class="tarjeta-title">Esmoquin Negro</h5>
                         <p class="tarjeta-text">Un diseño elegante y atemporal, ideal para cualquier evento formal.</p>
-                        
+                        <form class="formulario-alquiler">
+                            <label>
+                                <input type="radio" name="duracion" value="2sem"> 2 semanas
+                            </label>
+                            <label>
+                                <input type="radio" name="duracion" value="1mes"> 1 mes
+                            </label><br><br>
+                                    <a href="alquiler.html" class="boton-alquilar">Alquilar</a>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -89,7 +125,15 @@
                     <div class="tarjeta-body">
                         <h5 class="tarjeta-title">Esmoquin Azul</h5>
                         <p class="tarjeta-text">Fino, un toque de color y modernidad a lo Black Panther.</p>
-                    
+                        <form class="formulario-alquiler">
+                            <label>
+                                <input type="radio" name="duracion" value="2sem"> 2 semanas
+                            </label>
+                            <label>
+                                <input type="radio" name="duracion" value="1mes"> 1 mes
+                            </label><br><br>
+                                    <a href="alquiler.html" class="boton-alquilar">Alquilar</a>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -101,6 +145,15 @@
                     <div class="tarjeta-body">
                         <h5 class="tarjeta-title">Esmoquin Personalizado</h5>
                         <p class="tarjeta-text">Perfecto para explorar tu imaginación</p>
+                        <form class="formulario-alquiler">
+                            <label>
+                                <input type="radio" name="duracion" value="2sem"> 2 semanas
+                            </label>
+                            <label>
+                                <input type="radio" name="duracion" value="1mes"> 1 mes
+                            </label><br><br>
+                                    <a href="alquiler.html" class="boton-alquilar">Alquilar</a>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -124,22 +177,22 @@
                 <video src="imagenes/videito.mp4" class="videito" controls></video>
             </div>
         </div>
-    </div><br><br>
+    </div>
 
 
-    <p class="recomendado_por">Recomendado Por</p><br>
+    <p id="patrocinadores" class="recomendado_por">Recomendado Por</p>
     <div class="recomendaciones">
         <span>ELMUNDO<i class="fa-solid fa-globe"></i></span> <span><i class="fa-solid fa-a"></i><i
                 class="fa-solid fa-b"></i><i class="fa-solid fa-c"></i></span> <span>LAVANGUARDIA</span>
         <span>FORBES<i class="fa-solid fa-tree"></i></span>
-    </div><br><br><br><br>
+    </div>
 
-    <hr>
+    
 
-    <div class="container-chica-linda">
+    <div id="trabajadores" class="container-chica-linda">
         <div class="row">
             <div class="col-6">
-                <img src="imagenes/chicalinda.webp" alt="chica de abajo" class="chicalinda">
+                <img src="  imagenes/chicalinda.webp" alt="chica de abajo" class="chicalinda">
             </div>
 
             <div class="col-6 poner-abajo">
@@ -187,10 +240,18 @@
                 </div>
             </div>
         </div>
+        
+
+
         <div class="grupopie2">
             <small>Copyright: Derechos Reservados a la Industria Textil </small>
         </div>
     </footer>
+
+    <div class="contenedor-fecha-hora" id="fechaHoraMadrid"></div>
+    
+
+    <script src="hora.js"></script>
 
 </body>
 
@@ -201,10 +262,4 @@
     crossorigin="anonymous"></script>
 </body>
 
-
 </html>
-
-
-
-
-
