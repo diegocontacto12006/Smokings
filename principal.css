@@ -1,0 +1,396 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+.contenedor-navegador {
+    position: sticky;
+    padding-left: 10%;
+    background-color: rgb(0, 0, 0);
+    height: 5.625%; 
+    font-size: 0.9375rem; 
+}
+
+.navegador {
+    position: relative; 
+    padding-right: 10%;
+    font-family: Helvetica;
+    font-weight: bolder;
+    color: whitesmoke;
+    display: flex;
+    align-items: center; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.nav-item {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    color: #c7f3ff;
+    border-bottom: 2px solid #c7f3ff;
+    cursor: pointer;
+}
+
+
+.icono-principal {
+    position: relative;
+    left: 0%;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer; 
+}
+
+
+
+
+
+
+.texto-imagen {
+    position: relative;
+    font-size: 40px;
+    font-weight: bolder;
+    top: 10%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+    font-family:Helvetica ;
+    text-decoration: underline;
+}
+
+.precio-imagen {
+    position: relative;
+    top: 20px;
+    left: 10%;
+    font-size: 150%;
+    color: white;
+    font-family: Helvetica;
+}
+
+.menu-vertical {
+    float: left;
+    background-color: black;
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.menu-vertical a {
+    display: block;
+    margin: 20px;
+}
+
+.imagen-cambia {
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    background-image: url(../imagenes/tux-3.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: AlternarImagenes 12s infinite alternate;
+}
+
+@keyframes AlternarImagenes {
+
+    0% {
+        background-image: url("../imagenes/tux-3.jpg");
+    }
+
+    20% {
+        background-image: url("../imagenes/esmoquin-grupo.webp");
+    }
+
+    40% {
+        background-image: url("../imagenes/guapo.webp");
+
+    }
+
+
+}
+
+.texto-abajo-imagen {
+    position: relative;
+    left: 10%;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: overline;
+    color: beige;
+}
+
+.imagen-descripcion {
+    color: rgb(255, 255, 255);
+    margin-left: 10%;
+    font-size: 1.0625 rem ;
+    
+}
+
+
+
+.bienvenida{
+    position: relative;
+    margin-top: 17%;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(107, 100, 100);
+}
+
+/* Estilos generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+.tarjeta {
+    border-radius: 22px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    /*con box-shadow conseguimos un efecto de tarjeta*/
+    box-shadow: -10px -14px 8px  rgba(121, 121, 121, 0.2);
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.tarjeta:hover{
+    box-shadow: -10px 14px 12px  rgba(255, 0, 0, 0.2);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta-body {
+    padding: 15px;
+}
+
+.tarjeta-title {
+    font-size: 17px;
+    margin: 5px;
+}
+
+.tarjeta-text {
+    font-size: 12px;
+    color: #555;
+}
+
+.formulario-alquiler {
+    margin-top: 10px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.formulario-alquiler label {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.boton-alquilar {
+    display: inline-block;
+    background-color: #1a73e8; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-decoration: none; 
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.boton-alquilar:hover {
+    background-color: #1558b0; 
+    transform: scale(1.05); 
+}
+
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #cae4ff !important;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #c1d3e7;
+}
+
+.videito{
+    width: 100%;
+    height:auto;
+    margin-top: 10%;
+}
+
+.container-video{
+    background-color: #212727;
+    margin-bottom: 5%;
+    height: auto;
+}
+
+
+.container-texto-video{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-texto-video p{
+    margin-top: 10%;
+    margin-left: 10px;
+}
+
+
+.recomendaciones{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.recomendado_por{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+.recomendaciones span{
+    font-size:  30px;
+    font-family: fantasy;
+    font-weight:bolder;
+}
+
+
+.container-chica-linda{
+    background-color: #e7e7e7;
+    font-family: Helvetica;
+}
+
+.esmoquin_impecable{
+    text-align: center;
+    font-family:Helvetica;
+}
+
+
+.encabezado-a-tu-lado{
+    text-align: center;
+    font-family: monospace;
+}
+
+.encabezado-a-tu-lado p{
+    text-align: center;
+}
+
+.poner-abajo{
+    padding-top: 15%;
+}
+
+.a-tu-lado{
+    font-style: italic;
+}
+
+.chicalinda{
+    width: 100%;
+    height:100%;
+}
+
+
+
+/*:::: Pie de Pagina*/
+.pie1 {
+    width: 100%;
+    background-color: #0d2033;
+}
+.pie1 .grupopie1 {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie1 .grupopie1 .piebox figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie1 .grupopie1 .piebox figure img {
+    width: 150px;
+}
+.pie1 .grupopie1 .piebox h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie1 .grupopie1 .piebox p {
+    color: white;
+    margin-bottom: 10px;
+}
+.pie1 .grupopie1 .redessociales a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-top: 10px;
+    background-color: #0d2033;
+    text-align: center;
+}
+.pie1 .grupopie1 .redessociales a:hover {
+    color: aquamarine;
+}
+.pie1 .grupopie2 {
+    background-color: #0d2033 ;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie1 .grupopie2 small {
+    font-size: 15px;
+}
+.pie1 .grupopie1 {
+    width: 100%;
+    grid-template-columns: repeat(3);
+    grid-gap: 30px;
+    padding: 45px 0px;
+}
+
+.contenedor-fecha-hora {
+  color: #555; /* gris suave */
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: 0; /* sin separación arriba o abajo */
+  padding: 4px 0;
+  user-select: none;
+}
+
