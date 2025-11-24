@@ -36,7 +36,6 @@ body, html {
     font-size: 1rem;
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
     padding: 5px;
     border-bottom: 2px solid transparent;
 }
@@ -82,6 +81,18 @@ body, html {
     font-family: Helvetica;
 }
 
+.menu-vertical {
+    float: left;
+    background-color: black;
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.menu-vertical a {
+    display: block;
+    margin: 20px;
+}
 
 .imagen-cambia {
     overflow: hidden;
@@ -382,5 +393,8 @@ body, html {
   padding: 4px 0;
   user-select: none;
 }
+
+
+
 
 
